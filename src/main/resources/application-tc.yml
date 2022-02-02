@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    vault:
+      enabled: false
+    consul:
+      enabled: false
+
+
+  # профиль для отладки. отличен от dev. в нашем случае используется БД из TestContainers, для локальной отладки и в CI.
+  datasource:
+    dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
+    url: jdbc:tc:postgresql:11:///test
+    username: test
+    password: test
+    maximum-pool-size: 1
+
+logging:
+  appender:
+    name: CONSOLE

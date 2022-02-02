@@ -1,0 +1,33 @@
+logging:
+  level:
+    root: INFO
+
+spring:
+  application:
+    name: top-ci-example-multi-module-one
+  profiles:
+    active: tc
+
+#  level:
+#    org:
+#      springframework:
+#        boot:
+#          autoconfigure: DEBUG
+
+
+server:
+  port: 8080 # never change it on qa/test. Even in consul
+  servlet:
+    # should be changed in consul only. Here for test purpose only
+    context-path: /${spring.application.name}
+  error:
+    include-message: always
+    include-binding-errors: always
+
+
+# never change it on qa/test. Even in consul. Here just for local test
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'info, health, metrics, prometheus, heapdump, scheduledtasks, logfile, loggers, mappings'

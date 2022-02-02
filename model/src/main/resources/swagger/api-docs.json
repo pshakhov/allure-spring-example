@@ -1,0 +1,102 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "One module example application",
+    "license": {}
+  },
+  "host": "localhost:8080",
+  "basePath": "/example-multi-module-one",
+  "tags": [
+    {
+      "name": "test-controller",
+      "description": "Test Controller"
+    }
+  ],
+  "paths": {
+    "/people": {
+      "post": {
+        "tags": [
+          "test-controller"
+        ],
+        "summary": "add",
+        "operationId": "addUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "info",
+            "description": "info",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Info"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "definitions": {
+    "Info": {
+      "type": "object",
+      "required": [
+        "id",
+        "peoples"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "age": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "peoples": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/People"
+          }
+        }
+      },
+      "title": "Info"
+    },
+    "People": {
+      "type": "object",
+      "required": [
+        "color"
+      ],
+      "properties": {
+        "sex": {
+          "type": "boolean"
+        },
+        "color": {
+          "type": "string"
+        }
+      },
+      "title": "People"
+    }
+  }
+}
