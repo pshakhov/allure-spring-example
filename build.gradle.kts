@@ -37,7 +37,7 @@ dependencies {
     implementation(group = "org.testcontainers", name = "postgresql", "1.16.0")
     implementation(group = "com.h2database", name = "h2", version = "1.4.200")
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.12.0")
     testImplementation("org.springframework.boot:spring-boot-starter-test:$springVersion")
 }
 
