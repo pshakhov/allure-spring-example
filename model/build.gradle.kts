@@ -11,7 +11,7 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     implementation(group = "com.squareup.moshi", name = "moshi-kotlin", "1.13.0")
-    swaggerCodegen("io.swagger", "swagger-codegen-cli", "2.4.14")
+    swaggerCodegen("io.swagger", "swagger-codegen-cli", "2.4.44")
 }
 
 swaggerSources {
