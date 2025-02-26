@@ -31,7 +31,7 @@ dependencies {
     implementation("io.springfox:springfox-swagger2:2.9.2")
     implementation("io.springfox:springfox-swagger-ui:2.9.2")
 
-    implementation("io.github.microutils:kotlin-logging:2.1.21")
+    implementation("io.github.microutils:kotlin-logging:2.1.23")
 
     implementation(group = "org.postgresql", name = "postgresql", "+")
     implementation(group = "org.testcontainers", name = "postgresql", "1.16.0")
