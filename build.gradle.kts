@@ -1,6 +1,6 @@
 plugins {
     kotlin("jvm") version "1.6.10"
-    id("org.springframework.boot") version "2.5.4"
+    id("org.springframework.boot") version "2.7.18"
     kotlin("plugin.spring") version "1.6.10"
     id("io.qameta.allure") version "2.9.6"
 }
@@ -8,7 +8,7 @@ plugins {
 group = "org.example"
 version = "1.0-SNAPSHOT"
 
-val springVersion = "2.5.4" // FIXME up to 2.6.3
+val springVersion = "2.7.18" // FIXME up to 2.6.3
 
 repositories {
     mavenCentral()
