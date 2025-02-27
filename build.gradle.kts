@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.6.10"
+    kotlin("jvm") version "1.9.25"
     id("org.springframework.boot") version "2.5.4"
     kotlin("plugin.spring") version "1.6.10"
     id("io.qameta.allure") version "2.9.6"
