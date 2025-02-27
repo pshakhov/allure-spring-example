@@ -9,5 +9,5 @@ repositories {
 
 dependencies {
     implementation(group = "org.springframework.boot", name = "spring-boot-starter-data-jpa", "2.5.4")
-    implementation(group = "org.liquibase", name= "liquibase-core", version= "4.2.2")
+    implementation(group = "org.liquibase", name= "liquibase-core", version= "4.31.1")
 }
