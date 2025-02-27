@@ -1,7 +1,7 @@
 plugins {
     kotlin("jvm")
     `maven-publish`
-    id("org.hidetake.swagger.generator") version "2.18.2"
+    id("org.hidetake.swagger.generator") version "2.19.2"
 }
 
 repositories {
