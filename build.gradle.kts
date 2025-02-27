@@ -28,8 +28,8 @@ dependencies {
     implementation(group = "org.springframework.cloud", name = "spring-cloud-starter-vault-config", "3.0.3")
     implementation(group = "org.springframework.cloud", name = "spring-cloud-starter-consul-config", "3.0.3")
 
-    implementation("io.springfox:springfox-swagger2:2.9.2")
-    implementation("io.springfox:springfox-swagger-ui:2.9.2")
+    implementation("io.springfox:springfox-swagger2:2.10.5")
+    implementation("io.springfox:springfox-swagger-ui:2.10.5")
 
     implementation("io.github.microutils:kotlin-logging:2.1.23")
 
